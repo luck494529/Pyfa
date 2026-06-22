@@ -13,6 +13,9 @@
 #Pyfa file
 pyfaFits.html
 
+#Local EVE static data dump
+eve.db
+
 #Temporary files
 *.py__jb_tmp__
 

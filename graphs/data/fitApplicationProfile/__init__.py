@@ -17,7 +17,7 @@
 # along with pyfa.  If not, see <http://www.gnu.org/licenses/>.
 # =============================================================================
 
+from .graph import FitAmmoOptimalDpsGraph
 
-from .graph import FitDamageEnvelopeGraph
 
-FitDamageEnvelopeGraph.register()
+FitAmmoOptimalDpsGraph.register()
