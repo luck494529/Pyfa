@@ -607,9 +607,9 @@ def update_db():
         # Drifter weapons are published for some reason
         eos.gamedata.Item.name.in_(('Lux Kontos', 'Lux Xiphos', 'Lux Ballistra', 'Lux Kopis'))
     )).all():
-        if 'Asteroid Mining Crystal' in item.name:
+        if item.name in ('Abyssal Ore Processing', 'Mutated Drone Specialization'):
             continue
-        if 'Mutated Drone Specialization' in item.name:
+        if 'Asteroid Mining Crystal' in item.name:
             continue
         item.published = False
 
