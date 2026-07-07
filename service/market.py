@@ -286,7 +286,6 @@ class Market:
             "Megathron Federate Issue"    : self.les_grp,  # Reward during Crielere event
             "Raven State Issue"           : self.les_grp,  # AT4 prize
             "Tempest Tribal Issue"        : self.les_grp,  # AT4 prize
-            "Apotheosis"                  : self.les_grp,  # 5th EVE anniversary present
             "Zephyr"                      : self.les_grp,  # 2010 new year gift
             "Primae"                      : self.les_grp,  # Promotion of planetary interaction
             "Council Diplomatic Shuttle"  : self.les_grp,  # CSM X celebration
@@ -321,7 +320,6 @@ class Market:
             "Boobook"                     : self.les_grp,  # 19th EVE anniversary gift
             "Geri"                        : self.les_grp,  # AT18 prize
             "Bestla"                      : self.les_grp,  # AT18 prize
-            "Metamorphosis"               : self.les_grp,  # Seems to be anniversary gift
             "Shapash"                     : self.les_grp,  # AT19 prize
             "Cybele"                      : self.les_grp,  # AT19 prize
             "Sidewinder"                  : self.les_grp,  # AT20 prize
