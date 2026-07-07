@@ -995,7 +995,7 @@ class Market:
         def handleMg(marketGroup, path=()):
             marketGroup = self.getMarketGroup(marketGroup, eager=("items", "items.metaGroup", "children"))
             path = path + (marketGroup.name,)
-            print(' > '.join(path))
+            # print(' > '.join(path))
             for item in self.getItemsByMarketGroup(marketGroup):
                 items.add(item.ID)
             for mgc in self.getMarketGroupChildren(marketGroup):
@@ -1003,6 +1003,8 @@ class Market:
 
         for mg in self.ROOT_MARKET_GROUPS:
             handleMg(mg)
-        print(sorted(items))
+        print('---')
+        for i in sorted(items):
+            print(i)
 
 
