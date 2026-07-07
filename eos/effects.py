@@ -43719,6 +43719,21 @@ class Effect12908(BaseEffect):
                                      src.getModifiedItemAttr('shipBonusGD2'), skill='Gallente Destroyer', **kwargs)
 
 
+class Effect12916(BaseEffect):
+    """
+    moduleBonusBreacherPodDamageControl
+
+    Used by:
+    Module: Breach Control
+    """
+
+    type = 'active'
+
+    @staticmethod
+    def handler(fit, src, context, projectionRange, **kwargs):
+        fit.ship.boostItemAttr('breacherPodDamageResistance', src.getModifiedItemAttr('breacherPodActivatedDamageReceivedPercentage'), **kwargs)
+
+
 class Effect12923(BaseEffect):
     """
     dScanRangeBonus
@@ -43732,6 +43747,22 @@ class Effect12923(BaseEffect):
     @staticmethod
     def handler(fit, src, context, projectionRange, **kwargs):
         fit.ship.boostItemAttr('maxDirectionalScanRange', src.getModifiedItemAttr('dScanRangeBonus'), **kwargs)
+
+
+class Effect12924(BaseEffect):
+    """
+    proximityDbuffTacticalDestroyerHPAddEffect
+
+    Used by:
+    Ships from group: Tactical Destroyer (5 of 5)
+    """
+
+    type = 'passive'
+
+    @staticmethod
+    def handler(fit, src, context, projectionRange, **kwargs):
+        for attr in ('shieldCapacity', 'armorHP', 'hp'):
+            fit.ship.increaseItemAttr(attr, src.getModifiedItemAttr('proximityDbuffEffectTacticalDestroyerHP'), **kwargs)
 
 
 class Effect12940(BaseEffect):
